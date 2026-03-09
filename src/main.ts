@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Navigation active highlighting
   const currentPath = window.location.pathname;
   document.querySelectorAll('.nav-link').forEach((link) => {
-    if (link.getAttribute('href') === currentPath || (currentPath === '/' && link.getAttribute('href') === '/index.html')) {
+    if (
+      link.getAttribute('href') === currentPath ||
+      (currentPath === '/' && link.getAttribute('href') === '/index.html')
+    ) {
       link.classList.add('text-white');
       link.classList.remove('text-zinc-400');
     }

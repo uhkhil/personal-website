@@ -14,5 +14,5 @@ export default tseslint.config(
     rules: {
       // Add custom rules here
     },
-  }
+  },
 );

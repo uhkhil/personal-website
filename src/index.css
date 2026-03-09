@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;

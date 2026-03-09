@@ -1,126 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhil | Experience</title>
+    <meta name="description" content="Akhil's Work Experience" />
+    <link href="/src/index.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akhil | Experience</title>
-  <meta name="description" content="Akhil's Work Experience" />
-  <link href="/src/index.css" rel="stylesheet" />
-</head>
+  <body class="bg-black text-zinc-100 font-sans antialiased min-h-screen flex flex-col">
+    <!-- Navbar -->
+    {{> header }}
 
-<body class="bg-black text-zinc-100 font-sans antialiased min-h-screen flex flex-col">
-  <!-- Navbar -->
-  {{> header }}
+    <!-- Main Content -->
+    <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+      <section class="animate-fade-in-up">
+        <header class="mb-12">
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white">
+            Work Experience
+          </h1>
+          <p class="text-lg text-zinc-400">A timeline of my professional journey.</p>
+        </header>
 
-  <!-- Main Content -->
-  <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
-    <section class="animate-fade-in-up">
-      <header class="mb-12">
-        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white">
-          Work Experience
-        </h1>
-        <p class="text-lg text-zinc-400">A timeline of my professional journey.</p>
-      </header>
-
-      <div class="space-y-16">
-        <!-- Experience Item 1 -->
-        <article class="relative pl-12 sm:pl-0">
-          <div class="flex flex-col sm:flex-row sm:gap-16">
-            <div
-              class="sm:w-1/4 pb-2 sm:pb-0 text-zinc-500 text-sm sm:text-right pt-1 font-medium tracking-wide uppercase">
-              2019 - 2025
-            </div>
-            <div class="sm:w-3/4 relative pb-px">
-              <div class="absolute -left-12 sm:-left-8 top-2 w-3 h-3 bg-white rounded-full border-2 border-black z-10">
-              </div>
-              <!-- Line connecting items -->
-              <div class="absolute -left-[43px] sm:-left-[27px] top-5 bottom-[-4rem] w-0.5 bg-zinc-800"></div>
-              <h3 class="text-xl font-bold text-white">Full Stack Lead</h3>
-              <div class="text-zinc-300 font-medium mb-4">iSchoolConnect &middot; Mumbai</div>
-              <p class="text-zinc-400 leading-relaxed mb-4">
-                Led development for the WGU enrollment platform, owning backend architecture and helping build secure,
-                scalable production systems. Also contributed to internal platforms spanning chatbots, data pipelines,
-                and admin tools while mentoring engineers and improving engineering practices.
-              </p>
-
-              <h4 class="text-sm font-semibold text-zinc-300 tracking-wider mb-2 mt-6">Highlights</h4>
-              <ul class="list-disc list-inside text-zinc-400 space-y-1 text-sm">
-                <li>Led backend architecture for the WGU enrollment platform</li>
-                <li>Mentored engineers and improved engineering practices</li>
-                <li>Built core backend modules and platform features</li>
-                <li>Improved course catalog update turnaround time from 2 days to 2 hours</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-
-        <!-- Experience Item 2 -->
-        <article class="relative pl-12 sm:pl-0">
-          <div class="flex flex-col sm:flex-row sm:gap-16">
-            <div
-              class="sm:w-1/4 pb-2 sm:pb-0 text-zinc-500 text-sm sm:text-right pt-1 font-medium tracking-wide uppercase">
-              2017 - 2019
-            </div>
-            <div class="sm:w-3/4 relative pb-px">
+        <div class="space-y-16">
+          <!-- Experience Item 1 -->
+          <article class="relative pl-12 sm:pl-0">
+            <div class="flex flex-col sm:flex-row sm:gap-16">
               <div
-                class="absolute -left-12 sm:-left-8 top-2 w-3 h-3 bg-zinc-600 rounded-full border-2 border-black z-10">
+                class="sm:w-1/4 pb-2 sm:pb-0 text-zinc-500 text-sm sm:text-right pt-1 font-medium tracking-wide uppercase"
+              >
+                2019 - 2025
               </div>
-              <!-- Line connecting items -->
-              <div class="absolute -left-[43px] sm:-left-[27px] top-5 bottom-[-4rem] w-0.5 bg-zinc-800"></div>
-              <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
-              <div class="text-zinc-300 font-medium mb-4">Sproutlogix &middot; Pune</div>
-              <p class="text-zinc-400 leading-relaxed mb-4">
-                Worked across backend and frontend development for an employee lifecycle management system. Also built
-                mobile LMS applications and a chatbot to automate user support.
-              </p>
+              <div class="sm:w-3/4 relative pb-px">
+                <div
+                  class="absolute -left-12 sm:-left-8 top-2 w-3 h-3 bg-white rounded-full border-2 border-black z-10"
+                ></div>
+                <!-- Line connecting items -->
+                <div
+                  class="absolute -left-[43px] sm:-left-[27px] top-5 bottom-[-4rem] w-0.5 bg-zinc-800"
+                ></div>
+                <h3 class="text-xl font-bold text-white">Full Stack Lead</h3>
+                <div class="text-zinc-300 font-medium mb-4">iSchoolConnect &middot; Mumbai</div>
+                <p class="text-zinc-400 leading-relaxed mb-4">
+                  Led development for the WGU enrollment platform, owning backend architecture and
+                  helping build secure, scalable production systems. Also contributed to internal
+                  platforms spanning chatbots, data pipelines, and admin tools while mentoring
+                  engineers and improving engineering practices.
+                </p>
 
-              <h4 class="text-sm font-semibold text-zinc-300 tracking-wider mb-2 mt-6">Highlights</h4>
-              <ul class="list-disc list-inside text-zinc-400 space-y-1 text-sm">
-                <li>Built full stack features for an employee lifecycle platform</li>
-                <li>Developed 2 mobile LMS apps</li>
-                <li>Built a chatbot integrated with Dialogflow and Firebase</li>
-              </ul>
+                <h4 class="text-sm font-semibold text-zinc-300 tracking-wider mb-2 mt-6">
+                  Highlights
+                </h4>
+                <ul class="list-disc list-inside text-zinc-400 space-y-1 text-sm">
+                  <li>Led backend architecture for the WGU enrollment platform</li>
+                  <li>Mentored engineers and improved engineering practices</li>
+                  <li>Built core backend modules and platform features</li>
+                  <li>Improved course catalog update turnaround time from 2 days to 2 hours</li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Experience Item 3 -->
-        <article class="relative pl-12 sm:pl-0">
-          <div class="flex flex-col sm:flex-row sm:gap-16">
-            <div
-              class="sm:w-1/4 pb-2 sm:pb-0 text-zinc-500 text-sm sm:text-right pt-1 font-medium tracking-wide uppercase">
-              2016 - 2017
-            </div>
-            <div class="sm:w-3/4 relative">
+          <!-- Experience Item 2 -->
+          <article class="relative pl-12 sm:pl-0">
+            <div class="flex flex-col sm:flex-row sm:gap-16">
               <div
-                class="absolute -left-12 sm:-left-8 top-2 w-3 h-3 bg-zinc-800 rounded-full border-2 border-black z-10">
+                class="sm:w-1/4 pb-2 sm:pb-0 text-zinc-500 text-sm sm:text-right pt-1 font-medium tracking-wide uppercase"
+              >
+                2017 - 2019
               </div>
-              <!-- Line connecting items -->
-              <div class="absolute -left-[43px] sm:-left-[27px] top-5 bottom-0 w-0.5 bg-zinc-800"></div>
-              <h3 class="text-xl font-bold text-white">Intern</h3>
-              <div class="text-zinc-300 font-medium mb-4">QuodeIt &middot; Pune</div>
-              <p class="text-zinc-400 leading-relaxed mb-4">
-                Built the UI for an assessment platform while working remotely during college. Later continued with
-                Sproutlogix after the company was acquired.
-              </p>
+              <div class="sm:w-3/4 relative pb-px">
+                <div
+                  class="absolute -left-12 sm:-left-8 top-2 w-3 h-3 bg-zinc-600 rounded-full border-2 border-black z-10"
+                ></div>
+                <!-- Line connecting items -->
+                <div
+                  class="absolute -left-[43px] sm:-left-[27px] top-5 bottom-[-4rem] w-0.5 bg-zinc-800"
+                ></div>
+                <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
+                <div class="text-zinc-300 font-medium mb-4">Sproutlogix &middot; Pune</div>
+                <p class="text-zinc-400 leading-relaxed mb-4">
+                  Worked across backend and frontend development for an employee lifecycle
+                  management system. Also built mobile LMS applications and a chatbot to automate
+                  user support.
+                </p>
 
-              <h4 class="text-sm font-semibold text-zinc-300 tracking-wider mb-2 mt-6">Highlights</h4>
-              <ul class="list-disc list-inside text-zinc-400 space-y-1 text-sm">
-                <li>Built UI for an assessment platform</li>
-                <li>Worked remotely during college</li>
-                <li>Transitioned into Sproutlogix after acquisition</li>
-              </ul>
+                <h4 class="text-sm font-semibold text-zinc-300 tracking-wider mb-2 mt-6">
+                  Highlights
+                </h4>
+                <ul class="list-disc list-inside text-zinc-400 space-y-1 text-sm">
+                  <li>Built full stack features for an employee lifecycle platform</li>
+                  <li>Developed 2 mobile LMS apps</li>
+                  <li>Built a chatbot integrated with Dialogflow and Firebase</li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
+          </article>
 
-  <!-- Footer -->
-  {{> footer }}
-  <script type="module" src="/src/main.ts"></script>
-</body>
+          <!-- Experience Item 3 -->
+          <article class="relative pl-12 sm:pl-0">
+            <div class="flex flex-col sm:flex-row sm:gap-16">
+              <div
+                class="sm:w-1/4 pb-2 sm:pb-0 text-zinc-500 text-sm sm:text-right pt-1 font-medium tracking-wide uppercase"
+              >
+                2016 - 2017
+              </div>
+              <div class="sm:w-3/4 relative">
+                <div
+                  class="absolute -left-12 sm:-left-8 top-2 w-3 h-3 bg-zinc-800 rounded-full border-2 border-black z-10"
+                ></div>
+                <!-- Line connecting items -->
+                <div
+                  class="absolute -left-[43px] sm:-left-[27px] top-5 bottom-0 w-0.5 bg-zinc-800"
+                ></div>
+                <h3 class="text-xl font-bold text-white">Intern</h3>
+                <div class="text-zinc-300 font-medium mb-4">QuodeIt &middot; Pune</div>
+                <p class="text-zinc-400 leading-relaxed mb-4">
+                  Built the UI for an assessment platform while working remotely during college.
+                  Later continued with Sproutlogix after the company was acquired.
+                </p>
 
+                <h4 class="text-sm font-semibold text-zinc-300 tracking-wider mb-2 mt-6">
+                  Highlights
+                </h4>
+                <ul class="list-disc list-inside text-zinc-400 space-y-1 text-sm">
+                  <li>Built UI for an assessment platform</li>
+                  <li>Worked remotely during college</li>
+                  <li>Transitioned into Sproutlogix after acquisition</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    {{> footer }}
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
