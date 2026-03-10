@@ -69,15 +69,27 @@ In the project directory, you can run:
 ## Project Structure
 
 ```text
+├── data/              # JSON data files (profile, experience, metadata)
 ├── public/            # Static assets like images and fonts
 ├── src/               # Application source code
 │   └── components/    # Reusable Handlebars components (e.g., footer, header)
 ├── index.html         # Main entry point and Home page
 ├── experience.html    # Experience page
+├── 404.html           # Custom 404 Error page
 ├── package.json       # Project dependencies and scripts
 ├── vite.config.ts     # Vite configuration
 └── eslint.config.js   # ESLint configuration
 ```
+
+## Data Flow
+
+The project's content is managed using JSON files located in the `data/` directory. This includes:
+
+- `profile.json`: Personal information and links.
+- `experience.json`: Work experiences and projects.
+- `meta.json`: SEO and meta tag information.
+
+During the Vite build process, `vite.config.ts` reads these JSON files and passes them into the `vite-plugin-handlebars` context. This allows Handlebars to dynamically populate data inside templates (like `src/components/` and the main `*.html` pages), enabling easy content updates without directly editing the HTML structures.
 
 ## Setup & Configuration
 
