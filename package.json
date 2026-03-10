@@ -1,8 +1,8 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Personal website and developer portfolio showcasing my work, experience, and projects.",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -16,8 +16,15 @@
     "type": "git",
     "url": "git+https://github.com/uhkhil/personal-website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "website",
+    "developer",
+    "vite",
+    "handlebars",
+    "tailwindcss"
+  ],
+  "author": "Akhil Kumar",
   "license": "MIT",
   "type": "module",
   "bugs": {
