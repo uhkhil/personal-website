@@ -19,6 +19,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         experience: 'experience.html',
+        notfound: '404.html',
       },
     },
   },
