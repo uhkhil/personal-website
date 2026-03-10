@@ -1,0 +1,41 @@
+{
+  "experiences": [
+    {
+      "period": "2019 - 2025",
+      "role": "Full Stack Lead",
+      "company": "iSchoolConnect",
+      "location": "Mumbai",
+      "description": "Led development for the WGU enrollment platform, owning backend architecture and helping build secure, scalable production systems. Also contributed to internal platforms spanning chatbots, data pipelines, and admin tools while mentoring engineers and improving engineering practices.",
+      "highlights": [
+        "Led backend architecture for the WGU enrollment platform",
+        "Mentored engineers and improved engineering practices",
+        "Built core backend modules and platform features",
+        "Improved course catalog update turnaround time from 2 days to 2 hours"
+      ]
+    },
+    {
+      "period": "2017 - 2019",
+      "role": "Full Stack Developer",
+      "company": "Sproutlogix",
+      "location": "Pune",
+      "description": "Worked across backend and frontend development for an employee lifecycle management system. Also built mobile LMS applications and a chatbot to automate user support.",
+      "highlights": [
+        "Built full stack features for an employee lifecycle platform",
+        "Developed 2 mobile LMS apps",
+        "Built a chatbot integrated with Dialogflow and Firebase"
+      ]
+    },
+    {
+      "period": "2016 - 2017",
+      "role": "Intern",
+      "company": "QuodeIt",
+      "location": "Pune",
+      "description": "Built the UI for an assessment platform while working remotely during college. Later continued with Sproutlogix after the company was acquired.",
+      "highlights": [
+        "Built UI for an assessment platform",
+        "Worked remotely during college",
+        "Transitioned into Sproutlogix after acquisition"
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}" />
-  <meta name="author" content="Akhil Kumar" />
+  <meta name="author" content="{{ profile.name }}" />
   <meta name="theme-color" content="#0f172a" />
   <meta name="robots" content="index, follow" />
 
@@ -13,7 +13,7 @@
   <meta property="og:description" content="{{ description }}" />
   <meta property="og:url" content="https://akhil-kumar.com{{ url }}" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:site_name" content="Akhil Kumar" />
+  <meta property="og:site_name" content="{{ profile.name }}" />
   <meta property="og:image" content="https://akhil-kumar.com/banner.webp" />
   <meta property="og:image:alt" content="Akhil Kumar's portfolio website preview" />
   <meta property="og:image:width" content="1200" />
@@ -43,11 +43,11 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Akhil Kumar",
+      "name": "{{ profile.name }}",
       "url": "https://akhil-kumar.com",
-      "email": "akhilnareshkumar@gmail.com",
-      "jobTitle": "Full Stack Developer",
-      "sameAs": ["https://github.com/uhkhil", "https://linkedin.com/in/akhil-n-kumar"]
+      "email": "{{ profile.contact.email }}",
+      "jobTitle": "{{ profile.role }}",
+      "sameAs": ["{{ profile.contact.github }}", "{{ profile.contact.linkedin }}"]
     }
   </script>
 

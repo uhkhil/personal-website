@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "Akhil Kumar - Full Stack Developer",
+    "description": "Portfolio of Akhil Kumar, a Full Stack Developer based in Mumbai, building scalable web applications with TypeScript, Node.js, NestJS, React, and PostgreSQL. Explore projects, experience, and contact details.",
+    "url": "/"
+  },
+  "experience": {
+    "title": "Experience - Akhil Kumar | Full Stack Developer",
+    "description": "Work experience of Akhil Kumar, a Full Stack Developer based in Mumbai. Led backend development at iSchoolConnect, Sproutlogix, and QuodeIt across 9+ years.",
+    "url": "/experience"
+  },
+  "notfound": {
+    "title": "404 Not Found - Akhil Kumar",
+    "description": "Page not found on Akhil Kumar's portfolio.",
+    "url": "/404.html"
+  }
+}

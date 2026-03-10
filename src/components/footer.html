@@ -2,10 +2,10 @@
   <div
     class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row justify-between items-center gap-4"
   >
-    <p class="text-sm text-zinc-300">&copy; 2026 Akhil Kumar</p>
+    <p class="text-sm text-zinc-300">&copy; 2026 {{ profile.name }}</p>
     <div class="flex gap-6">
       <a
-        href="mailto:akhilnareshkumar@gmail.com"
+        href="mailto:{{ profile.contact.email }}"
         aria-label="Email"
         class="text-zinc-300 hover:text-white transition-colors"
       >
@@ -19,7 +19,7 @@
         </svg>
       </a>
       <a
-        href="https://github.com/uhkhil"
+        href="{{ profile.contact.github }}"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
@@ -34,7 +34,7 @@
         </svg>
       </a>
       <a
-        href="https://linkedin.com/in/akhil-n-kumar"
+        href="{{ profile.contact.linkedin }}"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="LinkedIn"

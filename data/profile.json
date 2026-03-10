@@ -1,0 +1,14 @@
+{
+  "name": "Akhil Kumar",
+  "role": "Full Stack Developer",
+  "paragraphs": [
+    "I build scalable digital products with experience across backend systems, frontend applications, and technical leadership. I enjoy creating software that is practical, reliable, and thoughtfully designed.",
+    "Outside of work, I enjoy travelling, dancing, and building side projects that combine technology, creativity, and problem solving."
+  ],
+  "contact": {
+    "email": "akhilnareshkumar@gmail.com",
+    "buttonText": "Get in Touch",
+    "github": "https://github.com/uhkhil",
+    "linkedin": "https://linkedin.com/in/akhil-n-kumar"
+  }
+}
