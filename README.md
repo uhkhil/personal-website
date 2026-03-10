@@ -1,6 +1,6 @@
 # Personal Website
 
-Personal website and developer portfolio showcasing my work, experience, projects, and contact information.
+Personal website and developer portfolio showcasing my work, experience, projects, and contact information. The website is hosted on [https://akhil-kumar.com](https://akhil-kumar.com).
 
 ## Tech Stack
 
@@ -63,6 +63,8 @@ In the project directory, you can run:
   Runs ESLint to catch and fix problems.
 - `npm run format`
   Formats the code using Prettier.
+- `npm run deploy`
+  Builds the app for production and deploys it using Cloudflare Wrangler.
 
 ## Project Structure
 
