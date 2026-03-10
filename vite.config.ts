@@ -1,7 +1,8 @@
+import './src/types.d.ts';
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 import handlebars from 'vite-plugin-handlebars';
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 
 import { cloudflare } from '@cloudflare/vite-plugin';
 

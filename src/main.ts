@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   // Navigation active highlighting
-  const currentPath = window.location.pathname;
+  const currentPath = globalThis.location.pathname;
   document.querySelectorAll('.nav-link').forEach((link) => {
     if (
       link.getAttribute('href') === currentPath ||
