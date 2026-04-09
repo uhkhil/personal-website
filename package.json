@@ -4,9 +4,9 @@
   "private": true,
   "description": "Personal website and developer portfolio showcasing my work, experience, and projects.",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "npm run build && wrangler dev",
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
     "lint": "eslint .",
     "format": "prettier --write .",
     "deploy": "npm run build && wrangler deploy",
@@ -32,19 +32,20 @@
   },
   "homepage": "https://github.com/uhkhil/personal-website#readme",
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.26.1",
+    "@astrojs/check": "^0.9.8",
+    "@astrojs/sitemap": "^3.7.2",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/vite": "^4.2.1",
     "@types/node": "^25.3.5",
+    "astro": "^6.1.5",
     "eslint": "^10.0.3",
     "globals": "^17.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.3.2",
     "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1",
-    "vite": "^7.3.1",
-    "vite-plugin-handlebars": "^2.0.0",
     "wrangler": "^4.71.0"
   },
   "lint-staged": {
@@ -52,6 +53,6 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "*.{html,css,json,md}": "prettier --write"
+    "*.{astro,html,css,json,md}": "prettier --write"
   }
 }

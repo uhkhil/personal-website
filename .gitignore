@@ -29,6 +29,7 @@ vite.config.js.map
 vite.config.d.ts.map
 vite.config.js
 vite.config.d.ts
+.astro/
 
 # Env
 .env
@@ -39,3 +40,4 @@ vite.config.d.ts
 .wrangler
 .dev.vars*
 !.dev.vars.example
+
