@@ -1,5 +1,6 @@
 ---
-import profileData from '../../data/profile.json';
+import { getEntry } from 'astro:content';
+const profileData = (await getEntry('data', 'profile'))!.data as any;
 ---
 
 <footer class="mt-auto py-8">

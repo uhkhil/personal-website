@@ -1,8 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import profileData from '../../data/profile.json';
-import metaData from '../../data/meta.json';
+import { getEntry } from 'astro:content';
+const profileData = (await getEntry('data', 'profile'))!.data as any;
+const metaData = (await getEntry('data', 'meta'))!.data as any;
 import headshotImg from '../assets/headshot.webp';
 ---
 
@@ -47,7 +48,7 @@ import headshotImg from '../assets/headshot.webp';
       <div
         class="text-[1.05rem] md:text-lg text-zinc-300 leading-relaxed md:leading-[1.8] space-y-8 pt-4 md:pt-0"
       >
-        {profileData.paragraphs.map((p) => <p>{p}</p>)}
+        {profileData.paragraphs.map((p: string) => <p>{p}</p>)}
       </div>
 
       <div class="mt-12 flex gap-4 flex-wrap clear-both pb-8">

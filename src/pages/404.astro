@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import metaData from '../../data/meta.json';
+import { getEntry } from 'astro:content';
+const metaData = (await getEntry('data', 'meta'))!.data as any;
 ---
 
 <Layout

@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import metaData from '../../data/meta.json';
-import experienceData from '../../data/experience.json';
+import { getEntry } from 'astro:content';
+const metaData = (await getEntry('data', 'meta'))!.data as any;
+const experienceData = (await getEntry('data', 'experience'))!.data as any;
 import ExperienceItem from '../components/ExperienceItem.astro';
 ---
 
@@ -20,7 +21,7 @@ import ExperienceItem from '../components/ExperienceItem.astro';
       </header>
 
       <div class="space-y-16">
-        {experienceData.experiences.map((exp) => <ExperienceItem {...exp} />)}
+        {experienceData.experiences.map((exp: any) => <ExperienceItem {...exp} />)}
       </div>
       <br />
     </section>
