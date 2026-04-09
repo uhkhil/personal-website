@@ -1,4 +1,29 @@
-# Logs
+# Dependencies & Node Environments
+node_modules/
+
+# Build Outputs & Generated Artifacts
+dist/
+dist-ssr/
+.astro/
+
+# Vite generated files
+vite.config.js
+vite.config.js.map
+vite.config.d.ts
+vite.config.d.ts.map
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Cloudflare & Wrangler ecosystem
+.wrangler/
+.dev.vars*
+!.dev.vars.example
+
+# Runtime Logs
 logs
 *.log
 npm-debug.log*
@@ -7,37 +32,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Dependencies
-node_modules/
-dist/
-dist-ssr/
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# System & OS Files
 .DS_Store
+
+# Editor Integration
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# WebStorm & IntelliJ
+.idea/
+
+# Visual Studio
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+
+# Vim
 *.sw?
-
-# Generated files
-vite.config.js.map
-vite.config.d.ts.map
-vite.config.js
-vite.config.d.ts
-.astro/
-
-# Env
-.env
-.env.*
-!.env.example
-
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-

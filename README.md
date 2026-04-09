@@ -6,11 +6,10 @@ Personal website and developer portfolio showcasing my work, experience, project
 
 This project is built using a modern frontend stack:
 
-- **[Vite](https://vitejs.dev/)**: Next-generation frontend tooling for fast development
+- **[Astro](https://astro.build/)**: The web framework for content-driven websites
 - **HTML5 & CSS3**: Core web technologies
 - **[Tailwind CSS](https://tailwindcss.com/)**: A utility-first CSS framework for rapid UI development
 - **[TypeScript](https://www.typescriptlang.org/)**: Strongly typed programming language that builds on JavaScript
-- **[Handlebars](https://handlebarsjs.com/)**: Simple templating language using `vite-plugin-handlebars` for component reuse
 
 ## Getting Started
 
@@ -47,7 +46,7 @@ To start the local development server:
 npm run dev
 ```
 
-This will run the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in your browser. The page will reload if you make edits.
+This will run the app in development mode. Open [http://localhost:4321](http://localhost:4321) to view it in your browser. The page will reload if you make edits.
 
 ## Available Scripts
 
@@ -69,33 +68,28 @@ In the project directory, you can run:
 ## Project Structure
 
 ```text
-├── data/              # JSON data files (profile, experience, metadata)
 ├── public/            # Static assets like images and fonts
 ├── src/               # Application source code
-│   └── components/    # Reusable Handlebars components (e.g., footer, header)
-├── index.html         # Main entry point and Home page
-├── experience.html    # Experience page
-├── 404.html           # Custom 404 Error page
+│   ├── components/    # Reusable Astro components (e.g., footer, header)
+│   ├── content/       # Type-safe Content Collections
+│   ├── layouts/       # Astro layouts
+│   └── pages/         # Astro file-based routing
 ├── package.json       # Project dependencies and scripts
-├── vite.config.ts     # Vite configuration
+├── astro.config.mjs   # Astro configuration
 └── eslint.config.js   # ESLint configuration
 ```
 
 ## Data Flow
 
-The project's content is managed using JSON files located in the `data/` directory. This includes:
+The project's content is managed via Astro Content Collections in the `src/content/` directory. This includes Markdown and metadata.
 
-- `profile.json`: Personal information and links.
-- `experience.json`: Work experiences and projects.
-- `meta.json`: SEO and meta tag information.
-
-During the Vite build process, `vite.config.ts` reads these JSON files and passes them into the `vite-plugin-handlebars` context. This allows Handlebars to dynamically populate data inside templates (like `src/components/` and the main `*.html` pages), enabling easy content updates without directly editing the HTML structures.
+Astro Content Collections provide fully type-safe data access inside components and pages, enabling easy content updates without directly editing the HTML structures.
 
 ## Setup & Configuration
 
 - **ESLint & Prettier**: Configured for code formatting and linting.
-- **Tailwind CSS**: Integrated with Vite to process and bundle styles.
-- **Handlebars**: Used as a template engine for HTML component reuse.
+- **Tailwind CSS**: Integrated with Astro to process and bundle styles.
+- **Astro**: Used as the core framework for routing and component structure.
 
 ## License
 
