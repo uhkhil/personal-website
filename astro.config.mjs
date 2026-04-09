@@ -10,5 +10,6 @@ export default defineConfig({
   integrations: [sitemap()],
   image: {
     layout: 'constrained',
+    domains: ['raw.githubusercontent.com'],
   },
 });

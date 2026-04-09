@@ -29,12 +29,29 @@ const dataCollection = defineCollection({
       ),
     }),
     z.object({
+      projects: z.array(
+        z.object({
+          title: z.string(),
+          description: z.string(),
+          image: z.string(),
+          link: z.string().optional(),
+          github: z.string().optional(),
+          tags: z.array(z.string()),
+        }),
+      ),
+    }),
+    z.object({
       home: z.object({
         title: z.string(),
         description: z.string(),
         url: z.string(),
       }),
       experience: z.object({
+        title: z.string(),
+        description: z.string(),
+        url: z.string(),
+      }),
+      projects: z.object({
         title: z.string(),
         description: z.string(),
         url: z.string(),

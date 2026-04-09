@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets';
+
+export interface Props {
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+  github?: string;
+  tags: string[];
+}
+
+const { title, description, image, link, github, tags } = Astro.props;
+---
+
+<article class="flex flex-col md:flex-row gap-8 items-start group">
+  <div
+    class="w-full md:w-2/5 flex-shrink-0 rounded-xl overflow-hidden bg-zinc-800 border border-zinc-700/50 relative aspect-video"
+  >
+    <Image
+      inferSize={true}
+      src={image}
+      alt={title}
+      class="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
+    <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl pointer-events-none">
+    </div>
+  </div>
+
+  <div class="w-full md:w-3/5 flex flex-col justify-start">
+    <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">
+      {
+        link ? (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-zinc-300 transition-colors inline-flex items-center gap-2"
+          >
+            {title}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-zinc-500 group-hover:text-zinc-300 transition-colors"
+            >
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </a>
+        ) : (
+          title
+        )
+      }
+    </h3>
+    <p class="text-zinc-400 text-base leading-relaxed mb-6">
+      {description}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-auto">
+      {
+        tags.map((tag) => (
+          <span class="px-3 py-1 text-xs font-medium bg-zinc-800 text-zinc-300 rounded-full border border-zinc-700/50">
+            {tag}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</article>
