@@ -8,4 +8,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [sitemap()],
+  image: {
+    layout: 'constrained',
+  },
 });

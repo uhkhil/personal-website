@@ -1,7 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import profileData from '../../data/profile.json';
 import metaData from '../../data/meta.json';
+import headshotImg from '../assets/headshot.webp';
 ---
 
 <Layout title={metaData.home.title} description={metaData.home.description} url={metaData.home.url}>
@@ -14,8 +16,8 @@ import metaData from '../../data/meta.json';
         <div
           class="w-40 h-40 rounded-full overflow-hidden bg-zinc-800 flex items-center justify-center relative shadow-lg mb-6"
         >
-          <img
-            src="/headshot.webp"
+          <Image
+            src={headshotImg}
             alt={profileData.name}
             class="w-full h-full object-cover relative z-10"
           />
@@ -30,8 +32,8 @@ import metaData from '../../data/meta.json';
       <div
         class="hidden md:block float-right ml-10 mb-6 w-56 h-56 rounded-full overflow-hidden bg-zinc-800 flex items-center justify-center relative shadow-lg"
       >
-        <img
-          src="/headshot.webp"
+        <Image
+          src={headshotImg}
           alt={profileData.name}
           class="w-full h-full object-cover relative z-10"
         />
