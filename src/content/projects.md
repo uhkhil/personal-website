@@ -5,5 +5,5 @@ projects:
     image: 'https://raw.githubusercontent.com/uhkhil/sonic-blob/main/screenshots/slide-1.png'
     link: 'https://chromewebstore.google.com/detail/sonic-blob-audio-visualiz/fgcbbebnogeomgbgheiacpgjcilnhnap'
     github: 'https://github.com/uhkhil/sonic-blob'
-    tags: ['Chrome Extension', 'Three.js', 'Web Audio API', 'TypeScript']
+    tags: ['Chrome Extension', 'Three.js']
 ---
