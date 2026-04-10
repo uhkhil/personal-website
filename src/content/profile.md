@@ -2,11 +2,12 @@
 name: 'Akhil Kumar'
 role: 'Software Developer | Senior Full Stack Engineer'
 paragraphs:
-  - 'I am a software developer and senior full stack engineer with experience building backend-heavy web platforms, scalable APIs, and production systems used by real users. My work spans architecture, full stack development, and technical leadership, with a strong focus on reliability, maintainability, and practical product delivery.'
-  - 'I have led engineering efforts across enrollment platforms, chatbots, data pipelines, and internal tools, while mentoring developers and improving engineering quality. Outside work, I enjoy travelling, dancing, and building side projects that combine technology, creativity, and problem solving.'
+  - 'Akhil Kumar is a Senior Full Stack Engineer in Mumbai specializing in Node.js, TypeScript, NestJS, React, Angular, backend architecture, and scalable web applications.'
+  - 'With extensive experience in full stack engineering and backend systems, I build scalable digital products that deliver real value. My past work includes leading development for robust platforms that integrate multiple technologies and workflows.'
+  - 'From technical leadership to individual contributions, I am driven by a passion for quality and maintainability. You can explore my portfolio of projects and experience below.'
 contact:
   email: 'akhilnareshkumar@gmail.com'
-  buttonText: 'Get in Touch'
+  buttonText: 'Contact Akhil Kumar'
   github: 'https://github.com/uhkhil'
   linkedin: 'https://linkedin.com/in/akhil-n-kumar'
 ---

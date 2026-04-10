@@ -1,4 +1,5 @@
 ---
+intro: 'These are selected software engineering, full stack, and backend projects built by Akhil Kumar.'
 projects:
   - title: 'Sonic Blob'
     description: 'A Chrome extension that captures tab audio and renders a real-time 3D music visualizer with Three.js. Available on the Chrome Web Store.'

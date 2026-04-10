@@ -16,7 +16,15 @@ const projectsData = (await getEntry('data', 'projects'))!.data as any;
     <section>
       <header class="mb-16">
         <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white">Projects</h1>
-        <p class="text-lg text-zinc-400">A collection of things I've built and worked on.</p>
+        <p class="text-lg text-zinc-400 mb-6">A collection of things I've built and worked on.</p>
+
+        {
+          projectsData.intro && (
+            <p class="text-[1.05rem] md:text-lg text-zinc-300 leading-relaxed max-w-2xl">
+              {projectsData.intro}
+            </p>
+          )
+        }
       </header>
 
       <div class="space-y-20">

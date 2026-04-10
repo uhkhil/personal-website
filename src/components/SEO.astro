@@ -24,7 +24,7 @@ const { title, description, url } = Astro.props;
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:url" content={`https://akhil-kumar.com${url}`} />
+  <meta property="og:url" content={`https://akhil-kumar.com${url === '/' ? '' : url}`} />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content={profileData.name} />
   <meta property="og:image" content="https://akhil-kumar.com/banner.webp" />
@@ -41,7 +41,7 @@ const { title, description, url } = Astro.props;
   <meta name="twitter:site" content="@uhkhil" />
 
   <!-- Canonical -->
-  <link rel="canonical" href={`https://akhil-kumar.com${url}`} />
+  <link rel="canonical" href={`https://akhil-kumar.com${url === '/' ? '' : url}`} />
 
   <!-- Favicons -->
   <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
@@ -59,9 +59,27 @@ const { title, description, url } = Astro.props;
       '@type': 'Person',
       name: profileData.name,
       url: 'https://akhil-kumar.com',
+      image: 'https://akhil-kumar.com/banner.webp',
+      description:
+        'Akhil Kumar is a Senior Full Stack Engineer in Mumbai specializing in Node.js, TypeScript, NestJS, React, Angular, backend architecture, and scalable web applications.',
       email: profileData.contact.email,
-      jobTitle: profileData.role,
+      jobTitle: 'Senior Full Stack Engineer',
       sameAs: [profileData.contact.github, profileData.contact.linkedin],
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Mumbai',
+        addressCountry: 'India',
+      },
+      knowsAbout: [
+        'Node.js',
+        'TypeScript',
+        'NestJS',
+        'React',
+        'Angular',
+        'Backend Architecture',
+        'Full Stack Development',
+        'Scalable Web Applications',
+      ],
     })}
   />
 

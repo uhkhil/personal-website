@@ -1,15 +1,15 @@
 ---
 home:
-  title: 'Akhil Kumar - Software Developer & Senior Full Stack Engineer'
-  description: 'Portfolio of Akhil Kumar, a Software Developer and Senior Full Stack Engineer based in Mumbai, building scalable web platforms and backend systems with TypeScript, Node.js, NestJS, React, and PostgreSQL. Explore experience, projects, and contact details.'
+  title: 'Akhil Kumar | Senior Full Stack Engineer in Mumbai'
+  description: 'Akhil Kumar is a Senior Full Stack Engineer in Mumbai with experience in Node.js, TypeScript, NestJS, React, Angular, backend architecture, scalable APIs, and production web platforms.'
   url: '/'
 experience:
-  title: 'Experience - Akhil Kumar | Software Developer'
-  description: 'Work experience of Akhil Kumar, a Software Developer and Senior Full Stack Engineer based in Mumbai with experience leading backend architecture, full stack development, and engineering delivery across platforms at iSchoolConnect, Sproutlogix, and QuodeIt.'
+  title: 'Akhil Kumar Experience | Full Stack Lead, Node.js, TypeScript, NestJS'
+  description: 'Explore the professional experience of Akhil Kumar, including full stack development, backend architecture, technical leadership, and scalable platform engineering.'
   url: '/experience'
 projects:
-  title: 'Projects - Akhil Kumar | Software Developer & Engineer'
-  description: 'Portfolio projects built by Akhil Kumar, showcasing expertise as a software developer in full stack development, web platforms and backend systems.'
+  title: 'Akhil Kumar Projects | Full Stack and Backend Engineering Work'
+  description: 'View projects by Akhil Kumar across full stack development, backend systems, web applications, and scalable software engineering.'
   url: '/projects'
 notfound:
   title: '404 Not Found - Akhil Kumar'
